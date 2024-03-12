@@ -1,34 +1,39 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import styles from './page.module.scss'
+import Image from 'next/image';
+import styles from './page.module.scss';
 import * as Accordion from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
-import logo from '@/assets/Logo.png'
-import logo2 from '@/assets/Logo2.png'
-import Link from 'next/link'
-import pic1 from '@/assets/Frame219.png'
-import pic2 from '@/assets/Group286.png'
-import pic3 from '@/assets/Group264.png'
-import card1 from '@/assets/Rectangle1270.png'
-import card2 from '@/assets/Rectangle1270(1).png'
-import card3 from '@/assets/Rectangle1270(2).png'
-import img1 from '@/assets/Rectangle1270(3).png'
-import img2 from '@/assets/Group208.png'
-import img3 from '@/assets/Rectangle1270(4).png'
-import pie from '@/assets/PieGraph.png'
-import img4 from '@/assets/Ellipse4.png'
-import img5 from '@/assets/Ellipse4(1).png'
-import img6 from '@/assets/Ellipse4(2).png'
-import img7 from '@/assets/Rectangle1270(5).png'
-import img8 from '@/assets/Rectangle1270(6).png'
-import img9 from '@/assets/Rectangle1270(7).png'
-import img10 from '@/assets/Rectangle1270(8).png'
-import img11 from '@/assets/Ellipse10.png'
-import img12 from '@/assets/Ellipse10(1).png'
-import img13 from '@/assets/Ellipse10(2).png'
+import logo from '@/assets/Logo.png';
+import logo2 from '@/assets/Logo2.png';
+import Link from 'next/link';
+import pic1 from '@/assets/Frame219.png';
+import pic2 from '@/assets/Group286.png';
+import pic3 from '@/assets/Group264.png';
+import card1 from '@/assets/Rectangle1270.png';
+import card2 from '@/assets/Rectangle1270(1).png';
+import card3 from '@/assets/Rectangle1270(2).png';
+import img1 from '@/assets/Rectangle1270(3).png';
+import img2 from '@/assets/Group208.png';
+import img3 from '@/assets/Rectangle1270(4).png';
+import pie from '@/assets/PieGraph.png';
+import img4 from '@/assets/Ellipse4.png';
+import img5 from '@/assets/Ellipse4(1).png';
+import img6 from '@/assets/Ellipse4(2).png';
+import img7 from '@/assets/Rectangle1270(5).png';
+import img8 from '@/assets/Rectangle1270(6).png';
+import img9 from '@/assets/Rectangle1270(7).png';
+import img10 from '@/assets/Rectangle1270(8).png';
+import img11 from '@/assets/Ellipse10.png';
+import img12 from '@/assets/Ellipse10(1).png';
+import img13 from '@/assets/Ellipse10(2).png';
+import { v4 as uuidv4 } from 'uuid';
+
 
 export default function Home() {
+  // Generate a UUID
+  const uuid = uuidv4();
+  console.log(uuid);
   return (
     <main className={styles.main}>
       <div className={styles.hero}>
@@ -364,5 +369,5 @@ export default function Home() {
         </div>
       </footer>
     </main>
-  )
+  );
 }
